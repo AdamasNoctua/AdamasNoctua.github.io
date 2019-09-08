@@ -4,7 +4,8 @@ body{
 
 #content-wrapper{
     border: solid black 1px;
-    width: 40em;
+    width: 80%;
+    border-radius: 0.5em;
     margin: auto;
     text-align: center;
     padding: 0.5em;
@@ -13,5 +14,4 @@ body{
 #output-wrapper{
     min-height: 2em;
     padding: 0.5em 0;
-    border: dot-dash red 1px;
 }
