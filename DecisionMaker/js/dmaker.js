@@ -3,6 +3,10 @@ answers = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Yes - defi
 'Reply hazy, try again', 'Ask again later', 'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again',
 'Don\'t count on it', 'My reply is no', 'My sources say no', 'Outlook not so good', 'Very doubtful'];
 
+/**
+ * Flag for handling input spam
+ * @type {boolean}
+ */
 let canClick = true;
 
 /**
@@ -17,15 +21,24 @@ function makeDecision() {
             el('triangle').style.opacity = '0';
         }
         setTimeout(()=>{
-            el('decision-output').innerHTML = answers[Math.floor(Math.random()*answers.length)];
+            el('decision-output').innerHTML = answers[Math.floor(Math.random()*answers.length)].toUpperCase();
             el('triangle').style.opacity = '1';
             canClick = true;
         }, interval);
     }
 }
 
+document.addEventListener('DOMContentLoaded', ()=>{
+    // Apply shake on space
+    document.body.onkeypress = ev => {
+        if(ev.code === 'Space'){
+            makeDecision();
+        }
+    }
+});
+
 //listen to shake event
-let shakeEvent = new Shake({threshold: 30});
+let shakeEvent = new Shake({threshold: 21});
 shakeEvent.start();
 window.addEventListener('shake', function(){
     makeDecision()
