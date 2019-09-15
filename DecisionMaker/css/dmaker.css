@@ -26,9 +26,14 @@ html, body{
 #outer-ball{
     height: 20em;
     width: 22em;
-    background: radial-gradient(at top left, #2f2f2f, #000000);
+    background: radial-gradient(at top left, #202020, #000000);
     border-radius: 100%;
     padding-top: 2em;
+}
+
+#outer-ball:active{
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 #ball{
@@ -77,12 +82,4 @@ html, body{
 #output-wrapper{
     min-height: 2em;
     padding: 0.5em 0;
-}
-
-#decision-button{
-    background: #3a6ea1;
-    color: #ffffff;
-    padding: 1em;
-    text-transform: uppercase;
-    border-radius: 1em;
 }
