@@ -1,6 +1,6 @@
 answers = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Yes - definitely', 'You may rely on it',
 'As I see it, yes', 'Most likely', 'Outlook good', 'Yes', 'Signs point to yes',
-'Reply hazy, try again', 'Ask again later', 'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again',
+'Reply hazy, try again', 'Ask again later', 'Better not tell you now', 'Cannot predict now', 'Ask again please',
 'Don\'t count on it', 'My reply is no', 'My sources say no', 'Outlook not so good', 'Very doubtful'];
 
 /**
@@ -17,11 +17,11 @@ function makeDecision() {
         let interval = 0;
         canClick = false;
         if(el('triangle').style.opacity === '1'){
-            interval = 3000;
+            interval = 1500;
             el('triangle').style.opacity = '0';
         }
         setTimeout(()=>{
-            el('decision-output').innerHTML = answers[Math.floor(Math.random()*answers.length)].toUpperCase();
+            el('decision-output').innerHTML = answers[Math.floor(Math.random()*answers.length)];
             el('triangle').style.opacity = '1';
             canClick = true;
         }, interval);
