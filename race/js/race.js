@@ -4,6 +4,9 @@ let colors = ["#E53935", "#FB8C00", "#FDD835",
     "#43A047", "#00ACC1", "#3949AB",
     "#8E24AA"];
 
+/**
+ * Whether or not there's an ongoing race. Used to prevent interval from additional activating.
+ */
 let isRace = false;
 
 /**
@@ -104,7 +107,7 @@ function resetRacers() {
 
 document.addEventListener('DOMContentLoaded', ()=>{
    el('name-input').onkeypress = e => {
-       if(e.code === 'Enter'){
+       if(e.key === 'Enter'){
            addRacer();
        }
    }

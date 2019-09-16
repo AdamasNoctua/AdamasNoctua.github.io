@@ -34,6 +34,14 @@ body{
     padding: 0.5em 1em;
 }
 
+#controls button:hover{
+    background: #90A4AE;
+}
+
+#controls button:active{
+    box-shadow: 0 0 2pt 1pt #90A4AE;
+}
+
 #message{
     margin-top: 1em;
 }
