@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--suppress HtmlFormInputWithoutLabel -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Race</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/race.css">
+
+    <script src="../js/abstraction.js"></script>
+    <script src="js/race.js"></script>
+</head>
+<body>
+    <div id="controls">
+        <input type="text" id="name-input" placeholder="Name">
+        <button onclick="addRacer()">Add racer</button>
+
+        <button onclick="run()">Start race</button>
+    </div>
+
+    <div id="info-panel">
+        <span id="message"></span>
+    </div>
+
+    <div id="track-container">
+        <div id="track"></div>
+    </div>
+
+</body>
+</html>

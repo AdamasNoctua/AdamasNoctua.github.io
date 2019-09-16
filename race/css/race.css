@@ -1,0 +1,71 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #111111;
+    color: #ffffff;
+}
+
+#info-panel{
+    margin-top: 1em;
+    height: 2em;
+}
+
+#name-input{
+    border-radius: 0.75em;
+    padding: 0.5em;
+    background: #616161;
+    border: solid #616161 1px;
+    color: #EEEEEE;
+}
+
+#name-input:focus{
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #616161;
+}
+
+#controls button{
+    background: #546E7A;
+    border: 0;
+    border-radius: 0.75em;
+    color: #EEEEEE;
+    padding: 0.5em 1em;
+}
+
+#message{
+    margin-top: 1em;
+}
+
+#track-container{
+    border-top: solid #EEEEEE 1px;
+}
+
+.race-item h3{
+    display: inline-block;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.progress-container{
+    width: 100%;
+    background: #757575;
+    border-radius: 2em;
+}
+
+.progress{
+    width: 0;
+    height: 2em;
+    border-radius: 2em;
+}
+
+.remove-button{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.remove-button:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
