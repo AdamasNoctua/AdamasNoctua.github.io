@@ -8,9 +8,25 @@ body{
     color: #ffffff;
 }
 
-#info-panel{
+#controls{
     margin-top: 1em;
-    height: 2em;
+}
+
+#controls button{
+    background: #546E7A;
+    border: 0;
+    border-radius: 0.75em;
+    color: #EEEEEE;
+    padding: 0.5em 1em;
+}
+
+#controls button:hover{
+    background: #6a8b97;
+}
+
+#controls button:active{
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #616161;
 }
 
 #name-input{
@@ -26,12 +42,10 @@ body{
     box-shadow: 0 0 3pt 2pt #616161;
 }
 
-#controls button{
-    background: #546E7A;
-    border: 0;
-    border-radius: 0.75em;
-    color: #EEEEEE;
-    padding: 0.5em 1em;
+
+#info-panel{
+    margin-top: 1em;
+    height: 2em;
 }
 
 #controls button:hover{
@@ -45,6 +59,8 @@ body{
 #message{
     margin-top: 1em;
 }
+
+
 
 #track-container{
     border-top: solid #EEEEEE 1px;
